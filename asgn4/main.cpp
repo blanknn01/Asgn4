@@ -4,10 +4,14 @@
 #include"IEEE.h"
 #include<map>
 #include<set>
+#include"Student.h"	
 
 int main()
 {
-	std::set < std::string > new_set = { "ads","asd" };
-	IEEE ieee("conf name", "conf Loc", new_set);
-	std::cout << ieee.getConferenceLocation();
+	Course course;
+	IEEE ieee;
+	Student<IEEE> student("Nurik",12345687,20,new Course(),new IEEE());
+	std::cout << student.getAge();
+
 }
+

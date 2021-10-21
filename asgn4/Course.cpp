@@ -14,6 +14,13 @@ Course::Course(std::string name_of_course, int number_of_students, std::string l
     this->lecturer = lecturer;
 }
 
+void Course::setCourse(std::string name_of_course, int number_of_students, std::string lecturer)
+{
+    this->name_of_course = name_of_course;
+    this->number_of_students = number_of_students;
+    this->lecturer = lecturer;
+}
+
 std::string Course::getNameOfCourse() const
 {
     return name_of_course;
@@ -28,7 +35,6 @@ std::string Course::getLecturer() const
 {
     return lecturer;
 }
-
 void Course::setNameOfCourse(std::string name_of_cource)
 {
     this->name_of_course = name_of_cource;
@@ -43,3 +49,10 @@ void Course::setLecturer(std::string lecturer)
 {
     this->lecturer = lecturer;
 }
+
+    bool Course::operator==(const Course& other) {
+        if (this->getNumberOfStudents() == other.getNumberOfStudents()) {
+            return true;
+        }
+        return false;
+    }

@@ -1,4 +1,6 @@
-﻿  IEEE.cpp
+﻿  Student.cpp
   main.cpp
   Создание кода...
-  asgn4.vcxproj -> C:\Users\Admin\source\repos\asgn4\Debug\asgn4.exe
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __thiscall Student<class IEEE>::Student<class IEEE>(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int,int,class Course *,class IEEE *)" (??0?$Student@VIEEE@@@@QAE@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HHPAVCourse@@PAVIEEE@@@Z) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: int __thiscall Student<class IEEE>::getAge(void)" (?getAge@?$Student@VIEEE@@@@QAEHXZ) в функции _main.
+C:\Users\Admin\source\repos\asgn4\Debug\asgn4.exe : fatal error LNK1120: неразрешенных внешних элементов: 2

@@ -143,11 +143,13 @@
     <ClCompile Include="Course.cpp" />
     <ClCompile Include="IEEE.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Student.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ACM.h" />
     <ClInclude Include="Course.h" />
     <ClInclude Include="IEEE.h" />
+    <ClInclude Include="Student.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
